@@ -169,7 +169,7 @@ JSQMessagesKeyboardControllerDelegate>
 
 - (void)jsq_configureMessagesViewController
 {
-    self.view.backgroundColor = [UIColor whiteColor];
+    self.view.backgroundColor = [UIColor clearColor];
 
     self.jsq_isObserving = NO;
 
@@ -553,6 +553,7 @@ JSQMessagesKeyboardControllerDelegate>
     }
 
     JSQMessagesCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:cellIdentifier forIndexPath:indexPath];
+    
     cell.delegate = collectionView;
 
     if (!isMediaMessage) {

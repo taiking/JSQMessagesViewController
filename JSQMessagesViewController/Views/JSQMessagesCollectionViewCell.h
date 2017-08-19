@@ -91,6 +91,7 @@
  *  The object that acts as the delegate for the cell.
  */
 @property (weak, nonatomic) id<JSQMessagesCollectionViewCellDelegate> delegate;
+@property (weak, nonatomic) IBOutlet UILabel *date;
 
 /**
  *  Returns the label that is pinned to the top of the cell.
